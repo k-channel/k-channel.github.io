@@ -1,0 +1,187 @@
+<html>
+  <head>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/css/bootstrap.min.css" integrity="sha384-GJzZqFGwb1QTTN6wy59ffF1BuGJpLSa9DkKMp0DgiMDm4iYMj70gZWKYbI706tWS" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css?family=Concert+One" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js" integrity="sha384-wHAiFfRlMFy6i5SRaxvfOCifBUQy1xHdJ/yoi7FRNXMRBu5WHdZYu1hA6ZOblgut" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js" integrity="sha384-B0UglyR+jN6CkvvICOB2joaf5I4l3gm9GU6Hc1og6Ls7i6U/mkkaduKaBhlAXv9k" crossorigin="anonymous"></script>
+    <style>
+
+body {
+  font-family: 'Concert One', cursive;
+}
+
+.font-size-mid {
+  font-size: 1.5rem;
+}
+
+.color-heart {
+  color: pink;
+}
+
+img{
+  height: auto;
+  width: auto;
+  max-height: 100%;
+  max-width: 100%;
+}
+
+.modal-header img {
+  max-width: 100%;
+}
+
+
+    </style>
+  </head>
+  <title>Post_List</title>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-info">
+      <div class="container">
+        <a class="navbar-brand ml-auto mr-auto font-size-mid" href="#"><font class="color-heart">❤</font> FavoCon</a>
+      </div>
+    </nav>
+
+    <div class="container">
+      <div class="row">
+        <div class="col">
+          <font class="font-family-jp">応募作品一覧</font>
+          <hr>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-3">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example1ModalCenter">
+            <img src="https://cdn.pixabay.com/photo/2018/11/29/21/19/hamburg-3846525_1280.jpg" class="img-thumbnail">
+          </button>
+          <div class="modal fade" id="example1ModalCenter" tabindex="-1" role="dialog" aria-labelledby="example1ModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalCenterTitle">モーダルのタイトル</h5> -->
+                  <img src="https://cdn.pixabay.com/photo/2018/11/29/21/19/hamburg-3846525_1280.jpg">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- 応募者名追加 -->
+                  <p class="modal-applicant">@ishishi</p>
+                  <!-- <p>夕焼けが綺麗な街並みです！</p> -->
+                  <p class="modal-text">夕焼けが綺麗な街並みです！</p>
+                </div>
+                <!-- 下記一文追加 -->
+                <small class="modal-text-muted" align="right">9 mins</small>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">「いいね！」する</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+          <!-- <img src="https://cdn.pixabay.com/photo/2018/10/28/16/11/landscape-3779159_1280.jpg" class="img-thumbnail"> -->
+        <div class="col-3">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example2ModalCenter">
+            <img src="https://cdn.pixabay.com/photo/2018/10/28/16/11/landscape-3779159_1280.jpg" class="img-thumbnail">
+          </button>
+          <div class="modal fade" id="example2ModalCenter" tabindex="-1" role="dialog" aria-labelledby="example2ModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalCenterTitle">モーダルのタイトル</h5> -->
+                  <img src="https://cdn.pixabay.com/photo/2018/10/28/16/11/landscape-3779159_1280.jpg">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- 応募者名追加 -->
+                  <p class="modal-applicant">@k-chan</p>
+                  <!-- <p>夕焼けが綺麗な街並みです！</p> -->
+                  <p class="modal-text">雲海！</p>
+                </div>
+                <!-- 下記一文追加 -->
+                <small class="modal-text-muted" align="right">9 mins</small>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">「いいね！」する</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+          <!-- <img src="https://cdn.pixabay.com/photo/2018/12/04/22/38/road-3856796_1280.jpg" class="img-thumbnail"> -->
+        <div class="col-3">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example3ModalCenter">
+            <img src="https://cdn.pixabay.com/photo/2018/12/04/22/38/road-3856796_1280.jpg" class="img-thumbnail">
+          </button>
+          <div class="modal fade" id="example3ModalCenter" tabindex="-1" role="dialog" aria-labelledby="example3ModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalCenterTitle">モーダルのタイトル</h5> -->
+                  <img src="https://cdn.pixabay.com/photo/2018/12/04/22/38/road-3856796_1280.jpg">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- 応募者名追加 -->
+                  <p class="modal-applicant">@A-cyan</p>
+                  <!-- <p>夕焼けが綺麗な街並みです！</p> -->
+                  <p class="modal-text">horizon！</p>
+                </div>
+                <!-- 下記一文追加 -->
+                <small class="modal-text-muted" align="right">9 mins</small>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">「いいね！」する</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <!-- https://cdn.pixabay.com/photo/2018/11/01/05/33/british-columbia-3787200_1280.jpg -->
+        <div class="col-3">
+          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example4ModalCenter">
+            <img src="https://cdn.pixabay.com/photo/2018/11/01/05/33/british-columbia-3787200_1280.jpg" class="img-thumbnail">
+          </button>
+          <div class="modal fade" id="example4ModalCenter" tabindex="-1" role="dialog" aria-labelledby="example4ModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalCenterTitle">モーダルのタイトル</h5> -->
+                  <img src="https://cdn.pixabay.com/photo/2018/11/01/05/33/british-columbia-3787200_1280.jpg">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- 応募者名追加 -->
+                  <p class="modal-applicant">@Tonegawa</p>
+                  <!-- <p>夕焼けが綺麗な街並みです！</p> -->
+                  <p class="modal-text">これにはワシも大草原………！！</p>
+                </div>
+                <!-- 下記一文追加 -->
+                <small class="modal-text-muted" align="right">9 mins</small>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">「いいね！」する</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- footer追加 -->
+      <footer class="fixed-bottom" align="right">
+        <button class="btn btn-warning btn-lg mr-3 mb-3">
+          <i class="fa fa-trophy"></i>
+          応募する
+        </button>
+      </footer>
+    </div>
+
+  </body>
+</html>
