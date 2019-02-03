@@ -32,6 +32,24 @@ img{
   max-width: 100%;
 }
 
+@media (min-width: 0px){
+  .card-columns {
+    -webkit-column-count: 3;
+    column-count: 3;
+    -webkit-column-gap: 1.25rem;
+    column-gap: 1.25rem;
+    orphans: 1;
+    widows: 1;
+  }
+
+  .no-gutter-card-deck.card-columns {
+    column-gap: 0;
+  }
+
+  .no-gutter-card-deck > .card {
+    margin: 0;
+  }
+
 
     </style>
   </head>
@@ -50,11 +68,11 @@ img{
           <hr>
         </div>
       </div>
-      <div class="row">
-        <div class="col-3">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example1ModalCenter">
+      <div class="card-columns no-gutter-card-deck">
+
+          <a href="#"  data-toggle="modal" data-target="#example1ModalCenter">
             <img src="https://cdn.pixabay.com/photo/2018/11/29/21/19/hamburg-3846525_1280.jpg" class="img-thumbnail">
-          </button>
+          </a>
           <div class="modal fade" id="example1ModalCenter" tabindex="-1" role="dialog" aria-labelledby="example1ModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
               <div class="modal-content">
@@ -80,13 +98,13 @@ img{
               </div>
             </div>
           </div>
-        </div>
+
 
           <!-- <img src="https://cdn.pixabay.com/photo/2018/10/28/16/11/landscape-3779159_1280.jpg" class="img-thumbnail"> -->
-        <div class="col-3">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example2ModalCenter">
+
+          <a href="#" data-toggle="modal" data-target="#example2ModalCenter">
             <img src="https://cdn.pixabay.com/photo/2018/10/28/16/11/landscape-3779159_1280.jpg" class="img-thumbnail">
-          </button>
+          </a>
           <div class="modal fade" id="example2ModalCenter" tabindex="-1" role="dialog" aria-labelledby="example2ModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
               <div class="modal-content">
@@ -112,12 +130,12 @@ img{
               </div>
             </div>
           </div>
-        </div>
+
           <!-- <img src="https://cdn.pixabay.com/photo/2018/12/04/22/38/road-3856796_1280.jpg" class="img-thumbnail"> -->
-        <div class="col-3">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example3ModalCenter">
+
+          <a href="#" data-toggle="modal" data-target="#example3ModalCenter">
             <img src="https://cdn.pixabay.com/photo/2018/12/04/22/38/road-3856796_1280.jpg" class="img-thumbnail">
-          </button>
+          </a>
           <div class="modal fade" id="example3ModalCenter" tabindex="-1" role="dialog" aria-labelledby="example3ModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
               <div class="modal-content">
@@ -143,12 +161,12 @@ img{
               </div>
             </div>
           </div>
-        </div>
+
         <!-- https://cdn.pixabay.com/photo/2018/11/01/05/33/british-columbia-3787200_1280.jpg -->
-        <div class="col-3">
-          <button type="button" class="btn btn-primary" data-toggle="modal" data-target="#example4ModalCenter">
+
+          <a href="#" data-toggle="modal" data-target="#example4ModalCenter">
             <img src="https://cdn.pixabay.com/photo/2018/11/01/05/33/british-columbia-3787200_1280.jpg" class="img-thumbnail">
-          </button>
+          </a>
           <div class="modal fade" id="example4ModalCenter" tabindex="-1" role="dialog" aria-labelledby="example4ModalCenterTitle" aria-hidden="true">
             <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
               <div class="modal-content">
@@ -174,8 +192,138 @@ img{
               </div>
             </div>
           </div>
-        </div>
+
+
+
+
+
+          <a href="#"  data-toggle="modal" data-target="#example5ModalCenter">
+            <img src="https://cdn.pixabay.com/photo/2015/06/12/13/16/mountain-806915_1280.jpg" class="img-thumbnail">
+          </a>
+          <div class="modal fade" id="example5ModalCenter" tabindex="-1" role="dialog" aria-labelledby="example5ModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalCenterTitle">モーダルのタイトル</h5> -->
+                  <img src="https://cdn.pixabay.com/photo/2015/06/12/13/16/mountain-806915_1280.jpg">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- 応募者名追加 -->
+                  <p class="modal-applicant">@ishishi</p>
+                  <!-- <p>夕焼けが綺麗な街並みです！</p> -->
+                  <p class="modal-text">夕焼けが綺麗な街並みです！</p>
+                </div>
+                <!-- 下記一文追加 -->
+                <small class="modal-text-muted" align="right">9 mins</small>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">「いいね！」する</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+
+          <!-- <img src="https://cdn.pixabay.com/photo/2018/10/28/16/11/landscape-3779159_1280.jpg" class="img-thumbnail"> -->
+
+          <a href="#" data-toggle="modal" data-target="#example6ModalCenter">
+            <img src="https://cdn.pixabay.com/photo/2018/11/29/23/32/dawn-3846778_1280.jpg" class="img-thumbnail">
+          </a>
+          <div class="modal fade" id="example6ModalCenter" tabindex="-1" role="dialog" aria-labelledby="example6ModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalCenterTitle">モーダルのタイトル</h5> -->
+                  <img src="https://cdn.pixabay.com/photo/2018/11/29/23/32/dawn-3846778_1280.jpg">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- 応募者名追加 -->
+                  <p class="modal-applicant">@k-chan</p>
+                  <!-- <p>夕焼けが綺麗な街並みです！</p> -->
+                  <p class="modal-text">雲海！</p>
+                </div>
+                <!-- 下記一文追加 -->
+                <small class="modal-text-muted" align="right">9 mins</small>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">「いいね！」する</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <!-- <img src="https://cdn.pixabay.com/photo/2018/12/04/22/38/road-3856796_1280.jpg" class="img-thumbnail"> -->
+
+          <a href="#" data-toggle="modal" data-target="#example7ModalCenter">
+            <img src="https://cdn.pixabay.com/photo/2018/11/15/22/52/wolf-3818343_1280.jpg" class="img-thumbnail">
+          </a>
+          <div class="modal fade" id="example7ModalCenter" tabindex="-1" role="dialog" aria-labelledby="example7ModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalCenterTitle">モーダルのタイトル</h5> -->
+                  <img src="https://cdn.pixabay.com/photo/2018/11/15/22/52/wolf-3818343_1280.jpg">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- 応募者名追加 -->
+                  <p class="modal-applicant">@A-cyan</p>
+                  <!-- <p>夕焼けが綺麗な街並みです！</p> -->
+                  <p class="modal-text">horizon！</p>
+                </div>
+                <!-- 下記一文追加 -->
+                <small class="modal-text-muted" align="right">9 mins</small>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">「いいね！」する</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
+        <!-- https://cdn.pixabay.com/photo/2018/11/01/05/33/british-columbia-3787200_1280.jpg -->
+
+          <a href="#" data-toggle="modal" data-target="#example8ModalCenter">
+            <img src="https://cdn.pixabay.com/photo/2018/11/15/22/20/foal-3818264_1280.jpg" class="img-thumbnail">
+          </a>
+          <div class="modal fade" id="example8ModalCenter" tabindex="-1" role="dialog" aria-labelledby="example8ModalCenterTitle" aria-hidden="true">
+            <div class="modal-dialog modal-lg modal-dialog-centered" role="document">
+              <div class="modal-content">
+                <div class="modal-header">
+                  <!-- <h5 class="modal-title" id="exampleModalCenterTitle">モーダルのタイトル</h5> -->
+                  <img src="https://cdn.pixabay.com/photo/2018/11/15/22/20/foal-3818264_1280.jpg">
+                  <button type="button" class="close" data-dismiss="modal" aria-label="閉じる">
+                    <span aria-hidden="true">&times;</span>
+                  </button>
+                </div>
+                <div class="modal-body">
+                  <!-- 応募者名追加 -->
+                  <p class="modal-applicant">@Tonegawa</p>
+                  <!-- <p>夕焼けが綺麗な街並みです！</p> -->
+                  <p class="modal-text">これにはワシも大草原………！！</p>
+                </div>
+                <!-- 下記一文追加 -->
+                <small class="modal-text-muted" align="right">9 mins</small>
+                <div class="modal-footer">
+                  <button type="button" class="btn btn-primary">「いいね！」する</button>
+                  <button type="button" class="btn btn-secondary" data-dismiss="modal">閉じる</button>
+                </div>
+              </div>
+            </div>
+          </div>
+
       </div>
+
+
+
       <!-- footer追加 -->
       <footer class="fixed-bottom" align="right">
         <button class="btn btn-warning btn-lg mr-3 mb-3">
